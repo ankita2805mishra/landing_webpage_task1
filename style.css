@@ -1,20 +1,23 @@
-*{
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');*{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    box-shadow: rgba(red, green, rgb(102, 102, 245), alpha);
+    margin: 0px;
+   
 }  
 footer{
     text-align: center;
     background-color: crimson;
     padding: 2px;
     color: black;
+    
  }  
+ 
+
 
 .nav{
     display: inline;
     z-index: 999;
-    
+
 }
 .logo{
     
@@ -35,7 +38,7 @@ footer{
      position: sticky;
     top: 0%;
     left: 0%;
-
+flex-wrap: wrap;
    
    
 
@@ -74,9 +77,11 @@ a{
     padding-top: 1%;
     padding-bottom: 10%;
     
+
     
      background-image:linear-gradient(rgba(0,0,0,0.9) ,rgba(0,0,0,0.9) ) ,url(img/background.jfif);
-    
+    width: 100%;
+    height: 100vh;
 }
 .text{
     
@@ -123,15 +128,17 @@ a{
 .back{
     background-image:linear-gradient(rgba(0,0,0,0.9) ,rgba(0,0,0,0.9) ) ,url(img/background.jfif);
 background-size: cover;
-width: 100%;
 height: 100%;
+width: 100%;
+
 
 }
 .foodmenu{
-    font: size 20px;
+    font: size 20vh;
     color:crimson;
     padding: 3%;
     text-align: center;
+    
     
  } 
 
@@ -141,6 +148,7 @@ height: 100%;
     text-align: center;
     font-size: xx-large;
     font-weight: 900;
+    padding: 3%;
  }
 
 
@@ -179,6 +187,7 @@ border-radius: 60%;
     background-color: beige;
     border-radius: 10%;
     background-position: bottom;
+    width: 50%;
  } 
  .about1{
     background-image:linear-gradient(rgba(0,0,0,0.9) ,rgba(0,0,0,0.9) ) ,url(img/background.jfif);
@@ -217,19 +226,52 @@ border-radius: 60%;
  
     
 
- @media only screen and ( max-width:408px)  {
+ @media only screen and ( max-width:768px)  {
     .background{
+        width: 140vb;
+        height:100%;}
+    .about1{
         width: 100%;
-        height: auto;
+        height: 100%;
+      }  
+      .back{
         
-        background-color: rgb(236, 20, 20);
-        
-        
-        
+    height: 400vh;
+    width: 200vb;   
+}
+.image{
+    height: 212vh;
+    width: 100%;
+}
+.navbar{
+    float: left;
+}
+.nav{
     
+    width: 100%;
+    height: 100%;
+    float: left;
 }
-nav{
-    display: inline-flexbox;
+footer{
+    width: 140vb;
+    height: 10vh;
 }
+ul{
+    width: 140vh;
+    height: 100%;
+    float: left;
+}
+.foodmenu{
+    width: 100%;
+    height: 10vh;
+}
+.column{
+    width: 100vb;
+    height: 100vh;
+}
+.menuitems{
+    height: 100vh;
+
+width: 100%;}
 
 }
